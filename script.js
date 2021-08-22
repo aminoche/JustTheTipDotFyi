@@ -7,16 +7,12 @@ const quality = {
 }
 
 const justTheTip = (subtotal, service, date) => {
-  const subtotalForm = document.getElementById('subtotal').value
-  const serviceForm = document.getElementById('service').value
-  const dateForm = document.getElementById('date').value
-  console.log(subtotalForm, serviceForm, dateForm)
-  const tipService = subtotalForm * quality[serviceForm]
-  const tipDate = subtotalForm * quality[dateForm]
-  const tip = tipService + tipDate
-  console.log(tipService, tipDate, tip)
-  document.getElementById('tip').innerHTML = tip;
-  return tip
+  const subtotalForm = document.getElementById('subtotal').value;
+  const serviceForm = document.getElementById('service').value;
+  const dateForm = document.getElementById('date').value;
+  const tipService = subtotalForm * quality[serviceForm];
+  const tipDate = subtotalForm * quality[dateForm];
+  const justTheTip = tipService + tipDate;
+  document.getElementById('justTheTip').innerHTML = justTheTip;
+  return tip;
 }
-
-
