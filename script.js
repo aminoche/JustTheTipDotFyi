@@ -1,10 +1,10 @@
 const quality = {
-  fantastic: .3,
-  fun: .25,
-  ok: .2,
-  alright: .15,
-  awful: .1
-}
+  fantastic: 0.3,
+  fun: 0.25,
+  ok: 0.2,
+  alright: 0.15,
+  awful: 0.1
+};
 
 const justTheTip = (subtotal, service, date) => {
   const subtotalForm = document.getElementById('subtotal').value;
@@ -15,4 +15,4 @@ const justTheTip = (subtotal, service, date) => {
   const justTheTip = tipService + tipDate;
   document.getElementById('justTheTip').innerHTML = justTheTip;
   return tip;
-}
+};
