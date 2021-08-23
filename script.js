@@ -12,7 +12,7 @@ const justTheTip = (subtotal, service, date) => {
   const dateForm = document.getElementById('date').value;
   const tipService = subtotalForm * quality[serviceForm];
   const tipDate = subtotalForm * quality[dateForm];
-  const justTheTip = tipService + tipDate;
+  const justTheTip = Math.ceil(tipService + tipDate);
   document.getElementById('justTheTip').innerHTML = justTheTip;
-  return tip;
+  return justTheTip;
 };
