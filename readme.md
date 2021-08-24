@@ -37,7 +37,7 @@ Task List
 - [ ] Contact the media
 
 ---
-`whois` [мокроедело.Movie](https://WetWorks.Movie)
+`whois` [мокроедело.Com](https://WetWorks.Movie)
 ---
 `whois` [JustTheTip.Men](https://JustTheTip.Men)
 
